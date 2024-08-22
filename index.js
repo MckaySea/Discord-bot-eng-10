@@ -19,8 +19,7 @@ client.once("ready", () => {
 
 // Command handler
 client.on("messageCreate", setupRolesCommand);
-client.on("messageCreate", handleMessages.checkForBadWords);
 // Interaction handler
 client.on("interactionCreate", roleSelectInteraction);
-
+client.on("messageCreate", handleMessages.checkForBadWords);
 client.login(process.env.DISCORD_TOKEN);
