@@ -449,7 +449,7 @@ const badWords = [
   "willy",
   "xrated",
   "xxx",
-]; // Add your list of bad words
+]; // list of bad words :O
 
 module.exports = {
   checkForBadWords: async (message) => {
